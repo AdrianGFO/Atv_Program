@@ -1,0 +1,68 @@
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    /* Usar flexbox para alinhar itens */
+    justify-content: space-between;
+    /* Espaço entre os itens */
+    align-items: center;
+    /* Alinha itens verticalmente ao centro */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Usar flexbox para os links do menu */
+    flex-grow: 1;
+    /* Permite que a lista ocupe espaço */
+}
+
+nav li {
+    margin-right: 15px;
+    /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .logout-button {
+    margin-left: auto;
+    /* Faz o botão ir para a extrema direita */
+}
+
+nav .logout-button a {
+    background-color: red;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto */
+    padding: 5px 10px;
+    /* Ajuste o espaçamento interno */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s;
+    /* Transição suave para a mudança de cor */
+}
+
+nav .logout-button button:hover {
+    background-color: darkred;
+    /* Cor do botão ao passar o mouse */
+}
+
+nav a.active {
+    font-weight: bold;
+    /* Estilo para o link ativo */
+    color: yellow;
+    /* Muda a cor do link ativo */
+}

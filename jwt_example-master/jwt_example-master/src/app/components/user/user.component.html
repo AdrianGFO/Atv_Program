@@ -1,0 +1,6 @@
+<form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <input formControlName="username" placeholder="Nome de usuário" required />
+    <input type="password" formControlName="password" placeholder="Senha" required minlength="6" />
+    <input type="email" formControlName="email" placeholder="Email" required />
+    <button type="submit" [disabled]="registerForm.invalid">Cadastrar</button>
+</form>

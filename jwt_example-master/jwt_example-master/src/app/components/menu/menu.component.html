@@ -1,0 +1,7 @@
+<nav *ngIf="autenticado()">
+    <ul>
+        <li><a (click)="navigateTo('/home')">Inicio</a></li>
+        <li><a (click)="navigateTo('/usuario')">Usuario</a></li>
+        <li class="logout-button"><a (click)="logout()">Sair</a></li>
+    </ul>
+</nav>
